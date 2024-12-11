@@ -1,13 +1,13 @@
 import { useState } from 'react'
 //usestate use's hook for ui updation
-import reactLogo from './assets/react.svg'
+import reactLogo  from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
   let [counter, setcounter]=useState(15)
 
-  //arrow function to decrease the value
+  //arrow function-instances to decrease the value
   const decreasevalue= () =>{
     counter=counter-1
     setcounter(counter)
