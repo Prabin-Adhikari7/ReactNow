@@ -1,0 +1,160 @@
+/* General Root Styling */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Logo Section Styling */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter, transform;
+  transition: transform 300ms ease, filter 300ms ease;
+}
+.logo:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Animation for Spinning Logo */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 10s linear;
+  }
+}
+
+/* Card Component Styling */
+.card {
+  background-color: #ffffff;
+  padding: 2em;
+  margin: 1em auto;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Title and Subtitle */
+.card h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+.card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Buttons */
+button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 300ms ease, transform 200ms ease;
+  cursor: pointer;
+}
+button:hover {
+  transform: translateY(-3px);
+}
+
+/* Devil Mode Buttons */
+button.devil {
+  background-color: #ff4d4f;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(255, 77, 79, 0.3);
+}
+button.devil:hover {
+  background-color: #ff7875;
+  box-shadow: 0 6px 12px rgba(255, 77, 79, 0.5);
+}
+button.normal {
+  background-color: #4caf50;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+}
+button.normal:hover {
+  background-color: #66bb6a;
+  box-shadow: 0 6px 12px rgba(76, 175, 80, 0.5);
+}
+
+/* Reviews Form */
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  transition: border-color 300ms ease, box-shadow 300ms ease;
+}
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #ff4d4f;
+  box-shadow: 0 0 8px rgba(255, 77, 79, 0.2);
+}
+form button {
+  background-color: #ff4d4f;
+  color: #fff;
+  border: none;
+}
+form button:hover {
+  background-color: #ff7875;
+}
+
+/* Section Headers */
+section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff4d4f;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+/* About Us Section */
+section.about-us {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+section.about-us p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+  .card {
+    margin: 0.5rem auto;
+  }
+  section h2 {
+    font-size: 1.5rem;
+  }
+}
